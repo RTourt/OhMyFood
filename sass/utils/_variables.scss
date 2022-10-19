@@ -1,20 +1,27 @@
 /*colors*/
-$color-bg: #fff;
+$color-bg-white: #fff;
+$color-bg-grey: #eaeaea;
+$color-bg-lightgrey: #f6f6f6;
+$color-bg-darkgrey: #353535;
+$color-bg-grey-icon: #7e7e7e;
+
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
+$color-font: #000000;
+
 /*fonts*/
-$font-family: 'Roboto', sans-serif;
-$font-family: 'Shrikhand', cursive;
+$font-content: 'Roboto', sans-serif;
+$font-logo: 'Shrikhand', cursive;
 
 /*media-queries*/
 $breakpoints-small: 320px;
 $breakpoints-medium: 768px;
 $breakpoints-large: 1024px;
-
+$breakpoints-xlarge: 1400px;
 
 
 // @media (min-width:$breakpoints-medium) and (max-width:$breakpoints-large) {}
 
-// @media (min-width:$breakpoints-large) {}
+// @media (min-width:$breakpoints-large) and (max-width:$breakpoints-xlarge) {}
