@@ -1,11 +1,10 @@
 {
   "name": "ohmyfood",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/main.css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/RTourt/OhMyFood/issues"
   },
-  "homepage": "https://github.com/RTourt/OhMyFood#readme"
+  "homepage": "https://github.com/RTourt/OhMyFood#readme",
+  "description": ""
 }
