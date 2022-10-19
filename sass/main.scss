@@ -1,3 +1,13 @@
-@import "./utils/_variables";
-@import "./base/_normalize";
-@import "./base/_typography";
+@import "./sass/utils/_variables";
+@import "./sass/base/_normalize";
+@import "./sass/base/_typography";
+@import "./sass/layouts/_header";
+
+
+
+@media (min-width: $breakpoints-small) and (max-width: $breakpoints-medium) {
+    body {
+        margin: 0 auto;
+        background-color: $color-bg;
+    }
+}
