@@ -1,0 +1,31 @@
+.footer {
+    height: 150px;
+    padding: 30px 20px 30px;
+    background-color: $color-darkgrey;
+    color: $color-white;
+
+    &__title {
+        font-family: $font-logo;
+        font-size: 21px;
+        margin: 0 0;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0px;
+        font-size: 17px;
+
+        li {
+            padding-bottom: 10px;
+
+            a {
+                text-decoration: none;
+                color: $color-white;
+
+                .fa-solid {
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+}
