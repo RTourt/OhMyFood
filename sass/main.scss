@@ -2,21 +2,12 @@
 
 @import "utils/variables";
 @import "utils/placeholders";
+@import "utils/mixins";
+@import "utils/functions";
 
 @import "layouts/header";
-@import "layouts/location";
-@import "layouts/hero";
-@import "layouts/functioning";
-@import "layouts/restaurants";
 @import "layouts/footer";
 
 @import "components/buttons";
 
-
-body {
-    margin: 0 auto;
-    background-color: $color-white;
-    color: $color-font;
-    font-family: $font-content;
-    box-sizing: border-box;
-}
+@import "pages/home";

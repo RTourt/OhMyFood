@@ -1,0 +1,181 @@
+/*******************body*******************/
+body {
+    margin: 0 auto;
+    background-color: $color-white;
+    color: $color-font;
+    font-family: $font-content;
+    box-sizing: border-box;
+}
+
+/*******************location*******************/
+.location__result {
+    @extend %flex-center;
+    height: 50px;
+    padding-right: 30px;
+    background-color: $color-grey;
+    border-top: 3px solid rgba(84, 84, 84, 0.15);
+    font-size: 17px;
+    font-weight: bold;
+    opacity: 0.8;
+
+    &__address {
+        padding: 15px 0 15px 15px;
+        margin: 0px;
+    }
+}
+
+/*******************hero*******************/
+.hero {
+    @extend %flex-center;
+    flex-direction: column;
+    height: 290px;
+    background-color: $color-lightgrey ;
+    padding: 0 20px 10px;
+
+    &__title {
+        text-align: center;
+        font-size: 25px;
+        margin: 0px 0px;
+        padding: 0 20px 20px;
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-size: 18px;
+        margin: 0px 0;
+        padding: 0 0 30px;
+        opacity: 0.7;
+    }
+}
+
+/*****************functioning*******************/
+.functioning {
+    padding: 30px 20px 50px;
+    height: 330px;
+
+    &__cards {
+        left: 35px;
+        position: absolute;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 122%;
+        height: 70px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        background-color: $color-lightgrey;
+        box-shadow: 0px 2px 6px -1px rgba(134, 134, 134, 0.9);
+
+        &__number {
+            @extend %flex-center;
+            position: absolute;
+            left: -14px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50px;
+            padding: 2 1 0;
+            font-size: 14px;
+            background-color: $color-primary;
+            color: $color-white;
+        }
+
+        &__icon {
+            color: $color-grey-icon;
+            padding-left: 40px;
+            font-size: 20px;
+
+            &--clicked {
+                color: $color-primary;
+            }
+        }
+
+        &__title {
+            font-weight: bold;
+            padding-left: 30px;
+        }
+    }
+}
+
+/*******************restaurants*******************/
+.restaurants {
+    padding: 30px 20px 50px;
+    background-color: $color-lightgrey;
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        align-items: center;
+
+        .restaurants__card {
+            width: 100%;
+            height: 242px;
+            background-color: $color-white;
+            border-radius: 20px 20px 20px 20px;
+            box-shadow: 0px 2px 6px -1px rgba(134, 134, 134, 0.9);
+            margin-bottom: 15px;
+
+            &__link {
+                text-decoration: none;
+                color: $color-font;
+            }
+
+            &__img {
+                width: 100%;
+                height: 170px;
+                object-fit: cover;
+                border-radius: 20px 20px 0px 0px;
+            }
+
+            &__tag {
+                position: absolute;
+                right: 32px;
+                margin-top: 12px;
+                padding: 6px 10px 5px;
+                border-radius: 2px;
+                background-color: $color-tertiary;
+                font-size: 13px;
+                font-weight: bold;
+                @include color-tag;
+            }
+
+            &__content {
+                height: 45px;
+                position: relative;
+                padding: 10px 0 10px 15px;
+
+                h3,
+                p {
+                    margin: 0px;
+                    font-size: 17px;
+                }
+
+                h3 {
+                    padding-bottom: 5px;
+                    font-size: 17px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                .fa-thin {
+                    color: $color-grey-icon;
+                    position: absolute;
+                    right: 25px;
+                    bottom: 20px;
+                    font-size: 30px;
+                    font-family: "Font Awesome 6 Free";
+                    font-style: normal;
+                }
+
+                .fa-thin:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,3 @@
+@mixin color-tag($colour: $color-tertiary) {
+    color: darken($colour, 40%);
+}
