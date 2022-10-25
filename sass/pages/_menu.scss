@@ -1,0 +1,99 @@
+.menu {
+    width: 100%;
+    position: relative;
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-lightgrey;
+        padding: 0 20px;
+        border-radius: 30px 30px 0px 0px;
+        position: absolute;
+        top: 190px;
+        width: -webkit-fill-available;
+
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: $font-logo;
+            font-size: 14px;
+            padding-top: 10px;
+            padding-left: 5px;
+
+            .fa-thin {
+                color: $color-grey-icon;
+                font-size: 30px;
+                font-family: "Font Awesome 6 Free";
+                font-style: normal;
+            }
+        }
+    }
+
+    & img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    & h2 {
+        text-transform: uppercase;
+        font-size: 17px;
+        font-weight: lighter;
+        padding-left: 0px;
+        padding-bottom: 5px;
+        border-bottom: 3px solid $color-tertiary;
+        width: 45px;
+        margin-left: 6px;
+        margin-top: 20px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+        border-radius: 15px 15px 15px 15px;
+        background-color: $color-white;
+        padding: 14px 10px 5px;
+        @include menu-shadow;
+        margin-bottom: 15px;
+
+        &__title {
+            margin: 0px;
+            font-size: 17px;
+        }
+
+        &__subtitle {
+            margin-top: 5px;
+            margin-bottom: 8px;
+            font-size: 14px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            hyphens: auto;
+            white-space: nowrap;
+            width: 82%;
+        }
+
+        span {
+            font-weight: bold;
+            align-self: flex-end;
+            position: absolute;
+            padding-top: 23px;
+            padding-right: 10px;
+            font-size: 14px;
+        }
+    }
+
+    .btn {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        font-size: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+}

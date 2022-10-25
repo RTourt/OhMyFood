@@ -1,3 +1,9 @@
 .btn {
     @include btn-purple;
+    transition: opacity 0.5s ease;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }

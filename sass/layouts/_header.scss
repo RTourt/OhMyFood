@@ -3,6 +3,16 @@
     padding: 25px 0 12px;
 
     &__logo {
-        width: 160px;
+        width: 155px;
     }
+
+    .fa-arrow-left {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        color: $color-darkgrey;
+        font-size: large;
+
+    }
+
 }

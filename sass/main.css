@@ -351,7 +351,14 @@ template {
   padding: 25px 0 12px;
 }
 .header__logo {
-  width: 160px;
+  width: 155px;
+}
+.header .fa-arrow-left {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  color: #353535;
+  font-size: large;
 }
 
 .footer {
@@ -388,6 +395,10 @@ template {
   padding-right: 9px;
   font-size: 10px;
 }
+.footer--menu {
+  position: relative;
+  top: 1120px;
+}
 
 .btn {
   border: 1px transparent;
@@ -396,7 +407,13 @@ template {
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   color: #fff;
   padding: 15px 20px;
-  font-size: 17px;
+  font-size: 15px;
+  transition: opacity 0.5s ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 /*******************body*******************/
@@ -411,10 +428,9 @@ body {
 /*******************location*******************/
 .location__result {
   height: 50px;
-  padding-right: 30px;
+  padding-right: 25px;
   background-color: #eaeaea;
-  border-top: 3px solid rgba(84, 84, 84, 0.15);
-  font-size: 17px;
+  box-shadow: inset 3px 6px 4px -4px rgba(0, 0, 0, 0.2);
   font-weight: bold;
   opacity: 0.8;
 }
@@ -422,23 +438,26 @@ body {
   padding: 15px 0 15px 15px;
   margin: 0px;
 }
+.location__result .fa-solid {
+  padding-bottom: 5px;
+}
 
 /*******************hero*******************/
 .hero {
   flex-direction: column;
-  height: 290px;
+  height: 280px;
   background-color: #f6f6f6;
   padding: 0 20px 10px;
 }
 .hero__title {
   text-align: center;
-  font-size: 25px;
+  font-size: 23px;
   margin: 0px 0px;
-  padding: 0 20px 20px;
+  padding: 0 40px 20px;
 }
 .hero__subtitle {
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
   margin: 0px 0;
   padding: 0 0 30px;
   opacity: 0.7;
@@ -449,9 +468,16 @@ body {
   padding: 30px 20px 50px;
   height: 330px;
 }
+.functioning__title {
+  font-size: 23px;
+}
 .functioning__cards {
   left: 35px;
   position: absolute;
+  width: auto;
+  min-width: 70%;
+  display: flex;
+  flex-direction: column;
 }
 .functioning__card {
   display: flex;
@@ -477,7 +503,7 @@ body {
 }
 .functioning__card__icon {
   color: #7e7e7e;
-  padding-left: 40px;
+  padding-left: 30px;
   font-size: 20px;
 }
 .functioning__card__icon--clicked {
@@ -485,7 +511,10 @@ body {
 }
 .functioning__card__title {
   font-weight: bold;
-  padding-left: 30px;
+  padding-left: 25px;
+}
+.functioning__card__title--mobile {
+  padding-left: 28px;
 }
 
 /*******************restaurants*******************/
@@ -557,4 +586,96 @@ body {
 }
 .restaurants__cards .restaurants__card__content .fa-thin:hover {
   color: #9356DC;
+}
+
+.menu {
+  width: 100%;
+  position: relative;
+}
+.menu__card {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  padding: 0 20px;
+  border-radius: 30px 30px 0px 0px;
+  position: absolute;
+  top: 190px;
+  width: -webkit-fill-available;
+}
+.menu__card__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Shrikhand", cursive;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+.menu__card__title .fa-thin {
+  color: #7e7e7e;
+  font-size: 30px;
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+}
+.menu img {
+  width: 100%;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.menu h2 {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: lighter;
+  padding-left: 0px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #99E2D0;
+  width: 45px;
+  margin-left: 6px;
+  margin-top: 20px;
+}
+.menu__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: auto;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #fff;
+  padding: 14px 10px 5px;
+  box-shadow: 1px 1px 10px -8px rgb(0, 0, 0);
+  margin-bottom: 15px;
+}
+.menu__content__title {
+  margin: 0px;
+  font-size: 17px;
+}
+.menu__content__subtitle {
+  margin-top: 5px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  white-space: nowrap;
+  width: 82%;
+}
+.menu__content span {
+  font-weight: bold;
+  align-self: flex-end;
+  position: absolute;
+  padding-top: 23px;
+  padding-right: 10px;
+  font-size: 14px;
+}
+.menu .btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  font-size: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
 }/*# sourceMappingURL=main.css.map */

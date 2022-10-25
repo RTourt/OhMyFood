@@ -15,7 +15,6 @@
         margin-top: 20px;
         padding-left: 0px;
 
-
         li {
             padding-bottom: 10px;
 
@@ -38,4 +37,10 @@
             }
         }
     }
+
+    &--menu {
+        position: relative;
+        top: 1120px;
+    }
+
 }
