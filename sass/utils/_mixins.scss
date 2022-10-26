@@ -11,3 +11,15 @@
 @mixin menu-shadow {
     box-shadow: 1px 1px 10px -8px rgb(0, 0, 0);
 }
+
+@mixin tablet-only {
+    @media (min-width:768px) and (max-width:1024px) {
+        @content;
+    }
+}
+
+// @mixin desktop-only {
+//     @media (min-width:$desktop) {
+//         @content;
+//     }
+// }
