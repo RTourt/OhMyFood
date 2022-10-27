@@ -626,7 +626,10 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .restaurants__cards {
     display: grid;
-    grid-gap: 49px;
+    width: 96%;
+    -moz-column-gap: 35px;
+         column-gap: 35px;
+    grid-template-columns: 50% 50%;
   }
 }
 .restaurants__cards .restaurants__card {
