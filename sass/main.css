@@ -434,6 +434,11 @@ header p {
   position: relative;
   top: 1115px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer--menu {
+    top: 495px;
+  }
+}
 .footer--menu--2 {
   position: relative;
   top: 1200px;
@@ -542,15 +547,15 @@ body {
 }
 .functioning__card:hover {
   cursor: pointer;
-  background-color: rgba(216, 0, 255, 0.1294117647);
+  background-color: rgba(255, 0, 153, 0.08);
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .functioning__card {
     width: 30%;
-    height: 155px;
-    flex-direction: column-reverse;
+    height: 150px;
+    flex-direction: column;
     justify-content: center;
-    row-gap: 10px;
+    row-gap: 0px;
   }
 }
 .functioning__card__number {
@@ -568,7 +573,7 @@ body {
   .functioning__card__number {
     padding-top: 0px;
     margin-top: 20px;
-    top: 120px;
+    top: 116px;
     left: auto;
     width: 30px;
     height: 30px;
@@ -582,9 +587,10 @@ body {
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .functioning__card__icon {
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
     padding-left: 0;
-    font-size: 22px;
+    font-size: 40px;
   }
 }
 .functioning__card__icon:hover {
@@ -628,7 +634,7 @@ body {
     display: grid;
     width: 96%;
     -moz-column-gap: 35px;
-         column-gap: 35px;
+    column-gap: 35px;
     grid-template-columns: 50% 50%;
   }
 }
@@ -640,6 +646,11 @@ body {
   box-shadow: 0px 2px 6px -1px rgba(134, 134, 134, 0.9);
   margin-bottom: 20px;
   transition: opacity 0.2s ease;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .restaurants__cards .restaurants__card a {
+    position: relative;
+  }
 }
 .restaurants__cards .restaurants__card:hover {
   opacity: 0.8;
@@ -653,7 +664,7 @@ body {
   width: 100%;
   height: 170px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 .restaurants__cards .restaurants__card__tag {
@@ -666,6 +677,12 @@ body {
   font-size: 13px;
   font-weight: bold;
   color: #278870;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .restaurants__cards .restaurants__card__tag {
+    right: 10px;
+    font-size: 16px;
+  }
 }
 .restaurants__cards .restaurants__card__content {
   height: 45px;
@@ -725,11 +742,22 @@ body {
 .menu__card__title .fa-thin:hover {
   color: #9356DC;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu__card__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu__card__content {
+    width: 32%;
+  }
+}
 .menu img {
   width: 100%;
   height: 220px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   overflow: hidden;
 }
 .menu h2 {
@@ -760,8 +788,8 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
   -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   white-space: nowrap;
   width: 82%;
 }
@@ -772,8 +800,8 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
   -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   white-space: nowrap;
   width: 82%;
 }

@@ -40,6 +40,10 @@
     &--menu {
         position: relative;
         top: 1115px;
+
+        @include tablet-only {
+            top: 495px;
+        }
     }
 
     &--menu--2 {
