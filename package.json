@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scripts": "sass --watch ./sass/main.scss:main.css"
+    "scripts": "sass --watch ./sass/main.scss:main.css",
+    "prefix": "postcss ./sass/main.css --use autoprefixer -d ./sass/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -13,6 +14,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserlist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/RTourt/OhMyFood/issues"
   },
