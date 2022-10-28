@@ -36,14 +36,14 @@
     }
 
     &__card__wrapper {
-        @include tablet-only {
+        @include desktop-only {
             display: flex;
             justify-content: space-between;
         }
     }
 
     &__card__content {
-        @include tablet-only {
+        @include desktop-only {
             width: 32%;
         }
     }

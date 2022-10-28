@@ -59,12 +59,6 @@ body {
     }
 
     &__cards {
-        left: 35px;
-        position: absolute;
-        width: -webkit-min-content;
-        width: -moz-min-content;
-        width: min-content;
-        min-width: 70%;
         display: flex;
         flex-direction: column;
 
@@ -81,16 +75,17 @@ body {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        width: 122%;
         height: 70px;
         margin-bottom: 20px;
         border-radius: 15px;
         background-color: $color-lightgrey;
         box-shadow: 0px 2px 6px -1px rgba(134, 134, 134, 0.9);
+        position: relative;
+        margin-left: 15px;
 
         &:hover {
             cursor: pointer;
-            background-color: rgb(255 0 153 / 8%);
+            background-color: #f4edfe;
         }
 
         @include tablet-only {
@@ -99,6 +94,7 @@ body {
             flex-direction: column;
             justify-content: center;
             row-gap: 0px;
+            margin-left: 0px;
         }
 
         &__number {
@@ -183,6 +179,16 @@ body {
             grid-template-columns: 50% 50%;
         }
 
+        @include desktop-only {
+            display: grid;
+            width: 100%;
+            -moz-column-gap: 30px;
+            column-gap: 30px;
+            grid-template-columns: 23% 23% 23% 23%;
+            justify-content: space-between;
+        }
+
+
         .restaurants__card {
             width: 100%;
             height: 250px;
@@ -194,6 +200,10 @@ body {
 
             & a {
                 @include tablet-only {
+                    position: relative;
+                }
+
+                @include desktop-only {
                     position: relative;
                 }
             }
@@ -231,6 +241,12 @@ body {
                     right: 10px;
                     font-size: 16px;
                 }
+
+                @include desktop-only {
+                    right: 10px;
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
             }
 
             &__content {
@@ -241,10 +257,30 @@ body {
                 h3 {
                     margin: 0px;
                     padding-bottom: 5px;
+
+                    @include desktop-only {
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        -webkit-hyphens: auto;
+                        -ms-hyphens: auto;
+                        hyphens: auto;
+                        white-space: nowrap;
+                        width: 65%;
+                    }
                 }
 
                 p {
                     margin: 0px;
+
+                    @include desktop-only {
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        -webkit-hyphens: auto;
+                        -ms-hyphens: auto;
+                        hyphens: auto;
+                        white-space: nowrap;
+                        width: 65%;
+                    }
                 }
 
                 .fa-thin {

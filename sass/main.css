@@ -432,16 +432,21 @@ header p {
 }
 .footer--menu {
   position: relative;
-  top: 1115px;
+  top: 1085px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .footer--menu {
     top: 495px;
   }
 }
 .footer--menu--2 {
   position: relative;
-  top: 1200px;
+  top: 1170px;
+}
+@media only screen and (min-width: 1024px) {
+  .footer--menu--2 {
+    top: 580px;
+  }
 }
 
 .btn {
@@ -516,12 +521,6 @@ body {
   }
 }
 .functioning__cards {
-  left: 35px;
-  position: absolute;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  min-width: 70%;
   display: flex;
   flex-direction: column;
 }
@@ -538,16 +537,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 122%;
   height: 70px;
   margin-bottom: 20px;
   border-radius: 15px;
   background-color: #f6f6f6;
   box-shadow: 0px 2px 6px -1px rgba(134, 134, 134, 0.9);
+  position: relative;
+  margin-left: 15px;
 }
 .functioning__card:hover {
   cursor: pointer;
-  background-color: rgba(255, 0, 153, 0.08);
+  background-color: #f4edfe;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .functioning__card {
@@ -556,6 +556,7 @@ body {
     flex-direction: column;
     justify-content: center;
     row-gap: 0px;
+    margin-left: 0px;
   }
 }
 .functioning__card__number {
@@ -638,6 +639,16 @@ body {
     grid-template-columns: 50% 50%;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .restaurants__cards {
+    display: grid;
+    width: 100%;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    grid-template-columns: 23% 23% 23% 23%;
+    justify-content: space-between;
+  }
+}
 .restaurants__cards .restaurants__card {
   width: 100%;
   height: 250px;
@@ -648,6 +659,11 @@ body {
   transition: opacity 0.2s ease;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .restaurants__cards .restaurants__card a {
+    position: relative;
+  }
+}
+@media only screen and (min-width: 1024px) {
   .restaurants__cards .restaurants__card a {
     position: relative;
   }
@@ -684,6 +700,13 @@ body {
     font-size: 16px;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .restaurants__cards .restaurants__card__tag {
+    right: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
 .restaurants__cards .restaurants__card__content {
   height: 45px;
   position: relative;
@@ -693,8 +716,30 @@ body {
   margin: 0px;
   padding-bottom: 5px;
 }
+@media only screen and (min-width: 1024px) {
+  .restaurants__cards .restaurants__card__content h3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    white-space: nowrap;
+    width: 65%;
+  }
+}
 .restaurants__cards .restaurants__card__content p {
   margin: 0px;
+}
+@media only screen and (min-width: 1024px) {
+  .restaurants__cards .restaurants__card__content p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    white-space: nowrap;
+    width: 65%;
+  }
 }
 .restaurants__cards .restaurants__card__content .fa-thin {
   color: #7e7e7e;
@@ -742,13 +787,13 @@ body {
 .menu__card__title .fa-thin:hover {
   color: #9356DC;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .menu__card__wrapper {
     display: flex;
     justify-content: space-between;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .menu__card__content {
     width: 32%;
   }
