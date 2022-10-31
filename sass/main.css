@@ -358,6 +358,10 @@ header p {
   font-size: 16px;
 }
 
+.location__result p {
+  font-size: 16px;
+}
+
 .hero p {
   font-size: 18px;
 }
@@ -515,16 +519,21 @@ body {
   padding: 20px 20px 40px;
   height: 330px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .functioning {
     height: 260px;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1024px) {
+  .functioning {
+    padding-bottom: 30px;
   }
 }
 .functioning__cards {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .functioning__cards {
     flex-direction: row;
     justify-content: space-between;
@@ -549,13 +558,15 @@ body {
   cursor: pointer;
   background-color: #f4edfe;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.functioning__card:hover :not(p, span) {
+  color: #9356DC;
+}
+@media only screen and (min-width: 768px) {
   .functioning__card {
-    width: 30%;
+    width: 31%;
     height: 150px;
     flex-direction: column;
     justify-content: center;
-    row-gap: 0px;
     margin-left: 0px;
   }
 }
@@ -570,7 +581,7 @@ body {
   background-color: #9356DC;
   color: #fff;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .functioning__card__number {
     padding-top: 0px;
     margin-top: 20px;
@@ -586,7 +597,7 @@ body {
   padding-left: 30px;
   font-size: 20px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .functioning__card__icon {
     margin-top: 0px;
     margin-bottom: 20px;
@@ -601,7 +612,7 @@ body {
   font-weight: bold;
   padding-left: 25px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .functioning__card__title {
     font-size: 18px;
     text-align: center;
@@ -613,7 +624,7 @@ body {
 .functioning__card__title--mobile {
   padding-left: 28px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .functioning__card__title--mobile {
     padding-left: 0;
   }
@@ -630,7 +641,7 @@ body {
   align-content: space-between;
   align-items: center;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .restaurants__cards {
     display: grid;
     width: 96%;
@@ -639,9 +650,8 @@ body {
     grid-template-columns: 50% 50%;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) and (min-width: 1024px) {
   .restaurants__cards {
-    display: grid;
     width: 100%;
     -moz-column-gap: 30px;
     column-gap: 30px;
@@ -658,12 +668,12 @@ body {
   margin-bottom: 20px;
   transition: opacity 0.2s ease;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .restaurants__cards .restaurants__card a {
-    position: relative;
+@media only screen and (min-width: 1024px) {
+  .restaurants__cards .restaurants__card {
+    height: 340px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .restaurants__cards .restaurants__card a {
     position: relative;
   }
@@ -683,6 +693,11 @@ body {
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
+@media only screen and (min-width: 1024px) {
+  .restaurants__cards .restaurants__card__img {
+    height: 260px;
+  }
+}
 .restaurants__cards .restaurants__card__tag {
   position: absolute;
   right: 32px;
@@ -694,16 +709,14 @@ body {
   font-weight: bold;
   color: #278870;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .restaurants__cards .restaurants__card__tag {
     right: 10px;
     font-size: 16px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) and (min-width: 1024px) {
   .restaurants__cards .restaurants__card__tag {
-    right: 10px;
-    font-size: 16px;
     margin-top: 10px;
   }
 }
@@ -749,9 +762,25 @@ body {
   font-size: 30px;
   font-family: "Font Awesome 6 Free";
   font-style: normal;
+  opacity: 1;
 }
-.restaurants__cards .restaurants__card__content .fa-thin:hover {
-  color: #9356DC;
+.restaurants__cards .restaurants__card__content .fa-solid {
+  color: #7e7e7e;
+  position: absolute;
+  right: 25px;
+  bottom: 23px;
+  font-size: 30px;
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+.restaurants__cards .restaurants__card__content .fa-solid:hover {
+  opacity: 1;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu {
