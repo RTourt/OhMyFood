@@ -6,6 +6,10 @@
     color: $color-white;
     padding: 15px 20px;
     font-size: 15px;
+
+    @include desktop-only {
+        font-size: 18px;
+    }
 }
 
 @mixin menu-shadow {

@@ -12,6 +12,11 @@
         top: 190px;
         width: -webkit-fill-available;
 
+        @include desktop-only {
+            top: 480px;
+            padding: 20px 100px 0px 100px;
+        }
+
         &__title {
             display: flex;
             justify-content: space-between;
@@ -54,6 +59,10 @@
         -o-object-fit: cover;
         object-fit: cover;
         overflow: hidden;
+
+        @include desktop-only {
+            height: 523px;
+        }
     }
 
     & h2 {
@@ -124,4 +133,9 @@
         padding-right: 40px;
     }
 
+    &--2 img {
+        @include desktop-only {
+            top: 523px;
+        }
+    }
 }

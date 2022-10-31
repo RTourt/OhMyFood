@@ -4,6 +4,15 @@
     background-color: $color-darkgrey;
     color: $color-white;
 
+
+    &__wrapper {
+        @include desktop-only {
+            max-width: 1600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
     &__title {
         font-family: $font-logo;
         font-weight: lighter;
@@ -43,6 +52,8 @@
 
         @include desktop-only {
             top: 495px;
+            padding-left: 100px;
+            padding-right: 100px;
         }
     }
 
@@ -52,7 +63,8 @@
 
         @include desktop-only {
             top: 580px;
+            padding-left: 100px;
+            padding-right: 100px;
         }
     }
-
 }

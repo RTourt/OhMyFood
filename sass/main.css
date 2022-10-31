@@ -338,12 +338,25 @@ template {
   display: none;
 }
 
+/*colors*/
+/*fonts*/
+/*media-queries*/
 h1 {
   font-size: 26px;
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 32px;
+  }
 }
 
 h2 {
   font-size: 24px;
+}
+@media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 28px;
+  }
 }
 
 h3 {
@@ -354,20 +367,31 @@ h4 {
   font-size: 22px;
 }
 
-header p {
-  font-size: 16px;
-}
-
 .location__result p {
   font-size: 16px;
+}
+@media only screen and (min-width: 1024px) {
+  .location__result p {
+    font-size: 18px;
+  }
 }
 
 .hero p {
   font-size: 18px;
 }
+@media only screen and (min-width: 1024px) {
+  .hero p {
+    font-size: 22px;
+  }
+}
 
 .functioning p {
   font-size: 17px;
+}
+@media only screen and (min-width: 1024px) {
+  .functioning p {
+    font-size: 20px;
+  }
 }
 
 .restaurants p {
@@ -378,9 +402,6 @@ header p {
   font-size: 17px;
 }
 
-/*colors*/
-/*fonts*/
-/*media-queries*/
 .functioning__card__number, .hero, .location__result, .header {
   display: flex;
   justify-content: center;
@@ -406,6 +427,13 @@ header p {
   padding: 30px 20px 30px;
   background-color: #353535;
   color: #fff;
+}
+@media only screen and (min-width: 1024px) {
+  .footer__wrapper {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .footer__title {
   font-family: "Shrikhand", cursive;
@@ -441,6 +469,8 @@ header p {
 @media only screen and (min-width: 1024px) {
   .footer--menu {
     top: 495px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 .footer--menu--2 {
@@ -450,6 +480,8 @@ header p {
 @media only screen and (min-width: 1024px) {
   .footer--menu--2 {
     top: 580px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
@@ -462,6 +494,11 @@ header p {
   padding: 15px 20px;
   font-size: 15px;
   transition: opacity 0.2s ease;
+}
+@media only screen and (min-width: 1024px) {
+  .btn {
+    font-size: 18px;
+  }
 }
 
 .btn:hover {
@@ -527,6 +564,9 @@ body {
 @media only screen and (min-width: 768px) and (min-width: 1024px) {
   .functioning {
     padding-bottom: 30px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .functioning__cards {
@@ -635,6 +675,13 @@ body {
   padding: 20px 20px 40px;
   background-color: #f6f6f6;
 }
+@media only screen and (min-width: 1024px) {
+  .restaurants__wrapper {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .restaurants__cards {
   display: flex;
   flex-direction: column;
@@ -670,7 +717,7 @@ body {
 }
 @media only screen and (min-width: 1024px) {
   .restaurants__cards .restaurants__card {
-    height: 340px;
+    height: 240px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -695,7 +742,7 @@ body {
 }
 @media only screen and (min-width: 1024px) {
   .restaurants__cards .restaurants__card__img {
-    height: 260px;
+    height: 160px;
   }
 }
 .restaurants__cards .restaurants__card__tag {
@@ -797,6 +844,12 @@ body {
   top: 190px;
   width: -webkit-fill-available;
 }
+@media only screen and (min-width: 1024px) {
+  .menu__card {
+    top: 480px;
+    padding: 20px 100px 0px 100px;
+  }
+}
 .menu__card__title {
   display: flex;
   justify-content: space-between;
@@ -833,6 +886,11 @@ body {
   -o-object-fit: cover;
   object-fit: cover;
   overflow: hidden;
+}
+@media only screen and (min-width: 1024px) {
+  .menu img {
+    height: 523px;
+  }
 }
 .menu h2 {
   text-transform: uppercase;
@@ -895,4 +953,9 @@ body {
   font-size: 15px;
   padding-left: 40px;
   padding-right: 40px;
+}
+@media only screen and (min-width: 1024px) {
+  .menu--2 img {
+    top: 523px;
+  }
 }/*# sourceMappingURL=main.css.map */
