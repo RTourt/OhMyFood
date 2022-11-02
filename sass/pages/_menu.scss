@@ -13,7 +13,7 @@
         width: -webkit-fill-available;
 
         @include desktop-only {
-            top: 480px;
+            top: 478px;
             padding: 20px 100px 0px 100px;
         }
 
@@ -27,14 +27,42 @@
             padding-left: 5px;
             font-weight: normal;
 
+            /*heart thin*/
             .fa-thin {
                 color: $color-grey-icon;
                 font-size: 30px;
                 font-family: "Font Awesome 6 Free";
                 font-style: normal;
+                opacity: 1;
+                position: absolute;
+                right: 40px;
 
-                &:hover {
-                    color: $color-primary;
+                @include desktop-only {
+                    right: 120px;
+                }
+            }
+
+            /*heart solid*/
+            .fa-solid {
+                color: $color-grey-icon;
+                font-size: 30px;
+                font-family: "Font Awesome 6 Free";
+                font-style: normal;
+                opacity: 0;
+                transition: all 0.2s ease;
+                position: absolute;
+                right: 40px;
+
+                @include desktop-only {
+                    right: 120px;
+                }
+
+                &:active {
+                    opacity: 1;
+                    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
         }
@@ -61,7 +89,13 @@
         overflow: hidden;
 
         @include desktop-only {
-            height: 523px;
+            height: 545px;
+        }
+    }
+
+    &--2 img {
+        @include desktop-only {
+            top: 523px;
         }
     }
 
@@ -113,6 +147,7 @@
             width: 82%;
         }
 
+        /*price*/
         span {
             font-weight: bold;
             align-self: flex-end;
@@ -123,6 +158,7 @@
         }
     }
 
+    /*button command*/
     .btn {
         margin-left: auto;
         margin-right: auto;
@@ -133,9 +169,10 @@
         padding-right: 40px;
     }
 
-    &--2 img {
+    &__card--2 {
         @include desktop-only {
-            top: 523px;
+            top: 480px;
+            padding: 20px 100px 0px 100px;
         }
     }
 }

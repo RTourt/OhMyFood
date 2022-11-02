@@ -226,10 +226,10 @@ body {
                 }
             }
 
-            &:hover {
-                opacity: 0.8;
-                cursor: pointer;
-            }
+            // &:hover {
+            //     opacity: 0.8;
+            //     cursor: pointer;
+            // }
 
             &__link {
                 text-decoration: none;
@@ -326,7 +326,7 @@ body {
                     opacity: 0;
                     transition: all 0.2s ease;
 
-                    &:hover {
+                    &:active {
                         opacity: 1;
                         background: linear-gradient(to bottom, #FF79DA, #9356DC);
                         -webkit-background-clip: text;
@@ -337,4 +337,5 @@ body {
             }
         }
     }
+
 }

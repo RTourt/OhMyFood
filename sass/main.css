@@ -725,10 +725,6 @@ body {
     position: relative;
   }
 }
-.restaurants__cards .restaurants__card:hover {
-  opacity: 0.8;
-  cursor: pointer;
-}
 .restaurants__cards .restaurants__card__link {
   text-decoration: none;
   color: #000000;
@@ -822,7 +818,7 @@ body {
   opacity: 0;
   transition: all 0.2s ease;
 }
-.restaurants__cards .restaurants__card__content .fa-solid:hover {
+.restaurants__cards .restaurants__card__content .fa-solid:active {
   opacity: 1;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   -webkit-background-clip: text;
@@ -833,6 +829,7 @@ body {
 .menu {
   width: 100%;
   position: relative;
+  /*button command*/
 }
 .menu__card {
   display: flex;
@@ -846,7 +843,7 @@ body {
 }
 @media only screen and (min-width: 1024px) {
   .menu__card {
-    top: 480px;
+    top: 478px;
     padding: 20px 100px 0px 100px;
   }
 }
@@ -859,15 +856,44 @@ body {
   padding-top: 10px;
   padding-left: 5px;
   font-weight: normal;
+  /*heart thin*/
+  /*heart solid*/
 }
 .menu__card__title .fa-thin {
   color: #7e7e7e;
   font-size: 30px;
   font-family: "Font Awesome 6 Free";
   font-style: normal;
+  opacity: 1;
+  position: absolute;
+  right: 40px;
 }
-.menu__card__title .fa-thin:hover {
-  color: #9356DC;
+@media only screen and (min-width: 1024px) {
+  .menu__card__title .fa-thin {
+    right: 120px;
+  }
+}
+.menu__card__title .fa-solid {
+  color: #7e7e7e;
+  font-size: 30px;
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  opacity: 0;
+  transition: all 0.2s ease;
+  position: absolute;
+  right: 40px;
+}
+@media only screen and (min-width: 1024px) {
+  .menu__card__title .fa-solid {
+    right: 120px;
+  }
+}
+.menu__card__title .fa-solid:active {
+  opacity: 1;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media only screen and (min-width: 1024px) {
   .menu__card__wrapper {
@@ -889,7 +915,12 @@ body {
 }
 @media only screen and (min-width: 1024px) {
   .menu img {
-    height: 523px;
+    height: 545px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .menu--2 img {
+    top: 523px;
   }
 }
 .menu h2 {
@@ -913,6 +944,7 @@ body {
   padding: 14px 10px 5px;
   box-shadow: 1px 1px 10px -8px rgb(0, 0, 0);
   margin-bottom: 15px;
+  /*price*/
 }
 .menu__content__title {
   margin: 0px;
@@ -955,7 +987,8 @@ body {
   padding-right: 40px;
 }
 @media only screen and (min-width: 1024px) {
-  .menu--2 img {
-    top: 523px;
+  .menu__card--2 {
+    top: 480px;
+    padding: 20px 100px 0px 100px;
   }
 }/*# sourceMappingURL=main.css.map */
