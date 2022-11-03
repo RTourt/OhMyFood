@@ -366,6 +366,11 @@ h3 {
 h4 {
   font-size: 22px;
 }
+@media only screen and (min-width: 1024px) {
+  h4 {
+    font-size: 25px;
+  }
+}
 
 .location__result p {
   font-size: 16px;
@@ -401,6 +406,11 @@ h4 {
 .footer__link {
   font-size: 17px;
 }
+@media only screen and (min-width: 1024px) {
+  .footer__link {
+    font-size: 20px;
+  }
+}
 
 .functioning__card__number, .hero, .location__result, .header {
   display: flex;
@@ -423,10 +433,15 @@ h4 {
 }
 
 .footer {
-  height: 150px;
-  padding: 30px 20px 30px;
+  padding: 40px 20px 10px;
   background-color: #353535;
   color: #fff;
+}
+@media only screen and (min-width: 1024px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .footer__wrapper {
@@ -445,6 +460,12 @@ h4 {
   margin-top: 20px;
   padding-left: 0px;
 }
+@media only screen and (min-width: 1024px) {
+  .footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .footer ul li {
   padding-bottom: 10px;
 }
@@ -458,28 +479,26 @@ h4 {
   padding-right: 12px;
   font-size: smaller;
 }
+@media only screen and (min-width: 1024px) {
+  .footer ul li a .fa-utensils {
+    font-size: 15px;
+  }
+}
 .footer ul li a .fa-handshake-angle {
   padding-right: 12px;
   font-size: 10px;
 }
+@media only screen and (min-width: 1024px) {
+  .footer ul li a .fa-handshake-angle {
+    font-size: 15px;
+  }
+}
 .footer--menu {
   position: relative;
-  top: 1085px;
+  margin-top: -50px;
 }
 @media only screen and (min-width: 1024px) {
   .footer--menu {
-    top: 495px;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-}
-.footer--menu--2 {
-  position: relative;
-  top: 1170px;
-}
-@media only screen and (min-width: 1024px) {
-  .footer--menu--2 {
-    top: 580px;
     padding-left: 100px;
     padding-right: 100px;
   }
@@ -527,8 +546,8 @@ body {
   background: aliceblue;
   -webkit-animation: loader 0.01s;
   animation: loader 0.01s;
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   z-index: 2;
@@ -777,6 +796,7 @@ body {
   box-shadow: 0px 2px 6px -1px rgba(134, 134, 134, 0.9);
   margin-bottom: 20px;
   transition: opacity 0.2s ease;
+  /*green tag nouveau*/
 }
 @media only screen and (min-width: 1024px) {
   .restaurants__cards .restaurants__card {
@@ -830,6 +850,8 @@ body {
   height: 45px;
   position: relative;
   padding: 10px 0 10px 15px;
+  /*heart thin*/
+  /*heart solid*/
 }
 .restaurants__cards .restaurants__card__content h3 {
   margin: 0px;
@@ -881,7 +903,7 @@ body {
   opacity: 0;
   transition: all 0.2s ease;
 }
-.restaurants__cards .restaurants__card__content .fa-solid:active {
+.restaurants__cards .restaurants__card__content .fa-solid:hover {
   opacity: 1;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   -webkit-background-clip: text;
@@ -900,13 +922,12 @@ body {
   background-color: #f6f6f6;
   padding: 0 20px;
   border-radius: 30px 30px 0px 0px;
-  position: absolute;
-  top: 190px;
+  position: relative;
+  top: -50px;
   width: -webkit-fill-available;
 }
 @media only screen and (min-width: 1024px) {
   .menu__card {
-    top: 478px;
     padding: 20px 100px 0px 100px;
   }
 }
@@ -951,7 +972,7 @@ body {
     right: 120px;
   }
 }
-.menu__card__title .fa-solid:active {
+.menu__card__title .fa-solid:hover {
   opacity: 1;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   -webkit-background-clip: text;
@@ -979,11 +1000,6 @@ body {
 @media only screen and (min-width: 1024px) {
   .menu img {
     height: 545px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .menu--2 img {
-    top: 523px;
   }
 }
 .menu h2 {
@@ -1048,10 +1064,4 @@ body {
   font-size: 15px;
   padding-left: 40px;
   padding-right: 40px;
-}
-@media only screen and (min-width: 1024px) {
-  .menu__card--2 {
-    top: 480px;
-    padding: 20px 100px 0px 100px;
-  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,9 +1,12 @@
 .footer {
-    height: 150px;
-    padding: 30px 20px 30px;
+    padding: 40px 20px 10px;
     background-color: $color-darkgrey;
     color: $color-white;
 
+    @include desktop-only {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
 
     &__wrapper {
         @include desktop-only {
@@ -24,6 +27,11 @@
         margin-top: 20px;
         padding-left: 0px;
 
+        @include desktop-only {
+            display: flex;
+            justify-content: space-between;
+        }
+
         li {
             padding-bottom: 10px;
 
@@ -36,11 +44,19 @@
                 .fa-utensils {
                     padding-right: 12px;
                     font-size: smaller;
+
+                    @include desktop-only {
+                        font-size: 15px;
+                    }
                 }
 
                 .fa-handshake-angle {
                     padding-right: 12px;
                     font-size: 10px;
+
+                    @include desktop-only {
+                        font-size: 15px;
+                    }
                 }
             }
         }
@@ -48,21 +64,9 @@
 
     &--menu {
         position: relative;
-        top: 1085px;
+        margin-top: -50px;
 
         @include desktop-only {
-            top: 495px;
-            padding-left: 100px;
-            padding-right: 100px;
-        }
-    }
-
-    &--menu--2 {
-        position: relative;
-        top: 1170px;
-
-        @include desktop-only {
-            top: 580px;
             padding-left: 100px;
             padding-right: 100px;
         }

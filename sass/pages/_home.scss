@@ -19,12 +19,11 @@ body {
     background: aliceblue;
     -webkit-animation: loader 0.01s;
     animation: loader 0.01s;
-    -webkit-animation-delay: 2.5s;
-    animation-delay: 2.5s;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     z-index: 2;
-
 
     &__wrapper {
         position: absolute;
@@ -197,7 +196,6 @@ body {
                 width: 30px;
                 height: 30px;
                 font-size: 18px;
-
             }
         }
 
@@ -236,7 +234,6 @@ body {
                 @include tablet-only {
                     padding-left: 0;
                 }
-
             }
         }
     }
@@ -296,11 +293,6 @@ body {
                 }
             }
 
-            // &:hover {
-            //     opacity: 0.8;
-            //     cursor: pointer;
-            // }
-
             &__link {
                 text-decoration: none;
                 color: $color-font;
@@ -318,6 +310,7 @@ body {
                 }
             }
 
+            /*green tag nouveau*/
             &__tag {
                 position: absolute;
                 right: 32px;
@@ -337,7 +330,6 @@ body {
                         margin-top: 10px;
                     }
                 }
-
             }
 
             &__content {
@@ -374,6 +366,7 @@ body {
                     }
                 }
 
+                /*heart thin*/
                 .fa-thin {
                     color: $color-grey-icon;
                     position: absolute;
@@ -385,6 +378,7 @@ body {
                     opacity: 1;
                 }
 
+                /*heart solid*/
                 .fa-solid {
                     color: $color-grey-icon;
                     position: absolute;
@@ -396,7 +390,7 @@ body {
                     opacity: 0;
                     transition: all 0.2s ease;
 
-                    &:active {
+                    &:hover {
                         opacity: 1;
                         background: linear-gradient(to bottom, #FF79DA, #9356DC);
                         -webkit-background-clip: text;
@@ -407,5 +401,4 @@ body {
             }
         }
     }
-
 }
