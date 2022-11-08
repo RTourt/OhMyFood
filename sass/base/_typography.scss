@@ -56,8 +56,4 @@ h4 {
 
 .footer__link {
     font-size: 17px;
-
-    @include desktop-only {
-        font-size: 20px;
-    }
 }

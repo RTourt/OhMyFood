@@ -4,8 +4,7 @@
     color: $color-white;
 
     @include desktop-only {
-        padding-top: 40px;
-        padding-bottom: 20px;
+        padding: 40px 100px;
     }
 
     &__wrapper {
@@ -65,10 +64,5 @@
     &--menu {
         position: relative;
         margin-top: -50px;
-
-        @include desktop-only {
-            padding-left: 100px;
-            padding-right: 100px;
-        }
     }
 }

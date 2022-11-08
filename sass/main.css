@@ -406,11 +406,6 @@ h4 {
 .footer__link {
   font-size: 17px;
 }
-@media only screen and (min-width: 1024px) {
-  .footer__link {
-    font-size: 20px;
-  }
-}
 
 .functioning__card__number, .hero, .location__result, .header {
   display: flex;
@@ -439,8 +434,7 @@ h4 {
 }
 @media only screen and (min-width: 1024px) {
   .footer {
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding: 40px 100px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -497,12 +491,6 @@ h4 {
   position: relative;
   margin-top: -50px;
 }
-@media only screen and (min-width: 1024px) {
-  .footer--menu {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-}
 
 .btn {
   border: 1px transparent;
@@ -543,7 +531,7 @@ body {
   display: flex;
   top: 0;
   left: 0;
-  background: aliceblue;
+  background: rgba(240, 248, 255, 0.95);
   -webkit-animation: loader 0.01s;
   animation: loader 0.01s;
   -webkit-animation-delay: 3s;
@@ -620,6 +608,11 @@ body {
   height: 280px;
   background-color: #f6f6f6;
   padding: 0 20px 10px;
+}
+@media only screen and (min-width: 1024px) {
+  .hero {
+    height: 310px;
+  }
 }
 .hero__title {
   text-align: center;
@@ -1023,7 +1016,11 @@ body {
   padding: 14px 10px 5px;
   box-shadow: 1px 1px 10px -8px rgb(0, 0, 0);
   margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
   /*price*/
+  /*block slide check*/
 }
 .menu__content__title {
   margin: 0px;
@@ -1055,6 +1052,34 @@ body {
   padding-top: 23px;
   padding-right: 10px;
   font-size: 14px;
+}
+.menu__content .slide-left {
+  position: absolute;
+  right: -20px;
+  width: 80px;
+  height: 68px;
+  top: 0;
+  background: #99E2D0;
+  transform: translateX(125px);
+  transition: transform 800ms ease-in-out;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__content:hover .slide-left {
+  transform: translateX(-20px);
+  opacity: 1;
+  margin-left: 50px;
+}
+.menu__content:hover .slide-left .fa-sharp {
+  transform: rotate(360deg);
+}
+.menu__content .fa-sharp {
+  font-size: 22px;
+  color: #fff;
+  transform: rotate(-90deg);
+  transition: transform 800ms ease-in-out;
 }
 .menu .btn {
   margin-left: auto;

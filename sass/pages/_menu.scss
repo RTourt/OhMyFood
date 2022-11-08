@@ -114,6 +114,9 @@
         padding: 14px 10px 5px;
         @include menu-shadow;
         margin-bottom: 15px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
 
         &__title {
             margin: 0px;
@@ -148,6 +151,39 @@
             padding-top: 23px;
             padding-right: 10px;
             font-size: 14px;
+        }
+
+        /*block slide check*/
+        .slide-left {
+            position: absolute;
+            right: -20px;
+            width: 80px;
+            height: 68px;
+            top: 0;
+            background: $color-tertiary;
+            transform: translateX(125px);
+            transition: transform 800ms ease-in-out;
+            opacity: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &:hover .slide-left {
+            transform: translateX(-20px);
+            opacity: 1;
+            margin-left: 50px;
+
+            .fa-sharp {
+                transform: rotate(360deg);
+            }
+        }
+
+        .fa-sharp {
+            font-size: 22px;
+            color: $color-white;
+            transform: rotate(-90deg);
+            transition: transform 800ms ease-in-out;
         }
     }
 

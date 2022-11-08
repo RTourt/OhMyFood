@@ -16,7 +16,7 @@ body {
     display: flex;
     top: 0;
     left: 0;
-    background: aliceblue;
+    background: rgba(240, 248, 255, 0.95);
     -webkit-animation: loader 0.01s;
     animation: loader 0.01s;
     -webkit-animation-delay: 3s;
@@ -103,6 +103,10 @@ body {
     height: 280px;
     background-color: $color-lightgrey ;
     padding: 0 20px 10px;
+
+    @include desktop-only {
+        height: 310px;
+    }
 
     &__title {
         text-align: center;
