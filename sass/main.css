@@ -1008,7 +1008,7 @@ body {
 }
 .menu__content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   width: auto;
   border-radius: 15px 15px 15px 15px;
@@ -1021,6 +1021,11 @@ body {
   cursor: pointer;
   /*price*/
   /*block slide check*/
+}
+.menu__content__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .menu__content__title {
   margin: 0px;
@@ -1052,6 +1057,8 @@ body {
   padding-top: 23px;
   padding-right: 10px;
   font-size: 14px;
+  right: 10px;
+  top: 5px;
 }
 .menu__content .slide-left {
   position: absolute;
@@ -1071,6 +1078,9 @@ body {
   transform: translateX(-20px);
   opacity: 1;
   margin-left: 50px;
+}
+.menu__content:hover .slide-left span {
+  padding-right: 50px;
 }
 .menu__content:hover .slide-left .fa-sharp {
   transform: rotate(360deg);
