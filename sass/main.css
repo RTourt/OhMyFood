@@ -907,6 +907,7 @@ body {
 .menu {
   width: 100%;
   position: relative;
+  /*animation menu content slide top*/
   /*button command*/
 }
 .menu__card {
@@ -959,6 +960,7 @@ body {
   transition: all 0.2s ease;
   position: absolute;
   right: 40px;
+  cursor: pointer;
 }
 @media only screen and (min-width: 1024px) {
   .menu__card__title .fa-solid {
@@ -981,6 +983,30 @@ body {
 @media only screen and (min-width: 1024px) {
   .menu__card__content {
     width: 32%;
+  }
+}
+.menu .slide-top {
+  -webkit-animation: slide-top 1.2s ease-in-out;
+  animation: slide-top 1.2s ease-in-out;
+}
+@-webkit-keyframes slide-top {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slide-top {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 .menu img {
@@ -1020,7 +1046,7 @@ body {
   overflow: hidden;
   cursor: pointer;
   /*price*/
-  /*block slide check*/
+  /*animation block slide check*/
 }
 .menu__content__wrapper {
   display: flex;
@@ -1057,8 +1083,12 @@ body {
   padding-top: 23px;
   padding-right: 10px;
   font-size: 14px;
-  right: 10px;
+  right: -10px;
   top: 5px;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 .menu__content .slide-left {
   position: absolute;
@@ -1077,10 +1107,7 @@ body {
 .menu__content:hover .slide-left {
   transform: translateX(-20px);
   opacity: 1;
-  margin-left: 50px;
-}
-.menu__content:hover .slide-left span {
-  padding-right: 50px;
+  position: absolute;
 }
 .menu__content:hover .slide-left .fa-sharp {
   transform: rotate(360deg);

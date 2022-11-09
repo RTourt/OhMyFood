@@ -51,6 +51,7 @@
                 transition: all 0.2s ease;
                 position: absolute;
                 right: 40px;
+                cursor: pointer;
 
                 @include desktop-only {
                     right: 120px;
@@ -77,6 +78,27 @@
     &__card__content {
         @include desktop-only {
             width: 32%;
+        }
+    }
+
+    /*animation menu content slide top*/
+    .slide-top {
+        -webkit-animation: slide-top 1.2s ease-in-out;
+        animation: slide-top 1.2s ease-in-out;
+
+    }
+
+    @keyframes slide-top {
+        0% {
+            -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+            opacity: 1;
         }
     }
 
@@ -157,11 +179,16 @@
             padding-top: 23px;
             padding-right: 10px;
             font-size: 14px;
-            right: 10px;
+            right: -10px;
             top: 5px;
+            width: 50px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            // transition: transform 800ms ease-in-out;
         }
 
-        /*block slide check*/
+        /*animation block slide check*/
         .slide-left {
             position: absolute;
             right: -20px;
@@ -180,11 +207,7 @@
         &:hover .slide-left {
             transform: translateX(-20px);
             opacity: 1;
-            margin-left: 50px;
-
-            span {
-                padding-right: 50px;
-            }
+            position: absolute;
 
             .fa-sharp {
                 transform: rotate(360deg);
