@@ -168,6 +168,7 @@
         position: relative;
         overflow: hidden;
         cursor: pointer;
+        transition: padding-right 0.3s ease-in-out;
 
         &__wrapper {
             display: flex;
@@ -244,10 +245,17 @@
             }
         }
 
+        /*price animation*/
         &:hover span {
             transform: translateX(-70px);
         }
 
+        /*menu content animation*/
+        &:hover {
+            padding-right: 125px;
+        }
+
+        /*icon check animation*/
         .fa-sharp {
             font-size: 22px;
             color: $color-white;
