@@ -1053,8 +1053,12 @@ body {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  transition: padding-right 0.3s ease-in-out;
   /*price*/
   /*animation block slide check*/
+  /*price animation*/
+  /*menu content animation*/
+  /*icon check animation*/
 }
 .menu__content__wrapper {
   display: flex;
@@ -1124,6 +1128,9 @@ body {
 }
 .menu__content:hover span {
   transform: translateX(-70px);
+}
+.menu__content:hover {
+  padding-right: 125px;
 }
 .menu__content .fa-sharp {
   font-size: 22px;
