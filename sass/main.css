@@ -532,12 +532,8 @@ body {
   top: 0;
   left: 0;
   background: rgba(240, 248, 255, 0.95);
-  -webkit-animation: loader 0.01s;
-  animation: loader 0.01s;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+  -webkit-animation: loader 0.01s both 3s;
+  animation: loader 0.01s both 3s;
   z-index: 2;
 }
 .loader__wrapper {
@@ -985,9 +981,21 @@ body {
     width: 32%;
   }
 }
-.menu .slide-top {
-  -webkit-animation: slide-top 1.2s ease-in-out;
-  animation: slide-top 1.2s ease-in-out;
+.menu .slide-top-1 {
+  -webkit-animation: slide-top 0.5s ease-in-out;
+  animation: slide-top 0.5s ease-in-out;
+}
+.menu .slide-top-2 {
+  -webkit-animation: slide-top 0.7s ease-in-out;
+  animation: slide-top 0.7s ease-in-out;
+}
+.menu .slide-top-3 {
+  -webkit-animation: slide-top 0.9s ease-in-out;
+  animation: slide-top 0.9s ease-in-out;
+}
+.menu .slide-top-4 {
+  -webkit-animation: slide-top 1.1s ease-in-out;
+  animation: slide-top 1.1s ease-in-out;
 }
 @-webkit-keyframes slide-top {
   0% {
@@ -1052,6 +1060,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  overflow: hidden;
 }
 .menu__content__title {
   margin: 0px;
@@ -1084,11 +1093,12 @@ body {
   padding-right: 10px;
   font-size: 14px;
   right: -10px;
-  top: 5px;
+  top: 16px;
   width: 50px;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  transition: transform 500ms ease-in-out;
 }
 .menu__content .slide-left {
   position: absolute;
@@ -1098,7 +1108,7 @@ body {
   top: 0;
   background: #99E2D0;
   transform: translateX(125px);
-  transition: transform 800ms ease-in-out;
+  transition: transform 480ms ease-in-out;
   opacity: 1;
   display: flex;
   justify-content: center;
@@ -1112,11 +1122,14 @@ body {
 .menu__content:hover .slide-left .fa-sharp {
   transform: rotate(360deg);
 }
+.menu__content:hover span {
+  transform: translateX(-70px);
+}
 .menu__content .fa-sharp {
   font-size: 22px;
   color: #fff;
-  transform: rotate(-90deg);
-  transition: transform 800ms ease-in-out;
+  transform: rotate(0deg);
+  transition: transform 600ms ease-in-out;
 }
 .menu .btn {
   margin-left: auto;

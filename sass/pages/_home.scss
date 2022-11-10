@@ -17,12 +17,8 @@ body {
     top: 0;
     left: 0;
     background: rgba(240, 248, 255, 0.95);
-    -webkit-animation: loader 0.01s;
-    animation: loader 0.01s;
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+    -webkit-animation: loader 0.01s both 3s;
+    animation: loader 0.01s both 3s;
     z-index: 2;
 
     &__wrapper {
