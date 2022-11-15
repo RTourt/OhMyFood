@@ -180,12 +180,7 @@
         &__title {
             margin: 0px;
             font-size: 17px;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            -webkit-hyphens: auto;
-            -ms-hyphens: auto;
-            hyphens: auto;
-            white-space: nowrap;
+            @include ellipsis;
             width: 82%;
         }
 
@@ -193,12 +188,7 @@
             margin-top: 5px;
             margin-bottom: 8px;
             font-size: 14px;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            -webkit-hyphens: auto;
-            -ms-hyphens: auto;
-            hyphens: auto;
-            white-space: nowrap;
+            @include ellipsis;
             width: 82%;
         }
 
@@ -230,9 +220,7 @@
             transform: translateX(125px);
             transition: transform 480ms ease-in-out;
             opacity: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex-center;
         }
 
         &:hover .slide-left {
